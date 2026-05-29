@@ -13,9 +13,18 @@
       min-height: 100vh;
     }
     .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+    .banner {
+      text-align: center;
+      padding: 40px 0 20px;
+    }
+    .banner img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
     header {
       text-align: center;
-      padding: 80px 0 40px;
+      padding: 40px 0 40px;
     }
     header h1 {
       font-size: 2.8rem;
@@ -51,22 +60,30 @@
     .card .icon { font-size: 2.5rem; margin-bottom: 16px; }
     .card h3 { font-size: 1.3rem; margin-bottom: 10px; color: #f1f5f9; }
     .card p { color: #94a3b8; font-size: 0.95rem; line-height: 1.6; }
-    .cta {
+    .contact {
       text-align: center;
-      padding: 40px 0 80px;
+      padding: 20px 0 60px;
     }
-    .cta a {
-      display: inline-block;
-      background: linear-gradient(135deg, #38bdf8, #818cf8);
-      color: #fff;
-      text-decoration: none;
-      padding: 14px 40px;
-      border-radius: 50px;
-      font-size: 1.1rem;
+    .contact h2 {
+      font-size: 1.5rem;
+      color: #f1f5f9;
+      margin-bottom: 24px;
+    }
+    .contact .qr {
+      max-width: 220px;
+      border-radius: 12px;
+      margin-bottom: 24px;
+      border: 2px solid rgba(255,255,255,0.15);
+    }
+    .contact .email {
+      color: #94a3b8;
+      margin-bottom: 8px;
+    }
+    .contact .email-addr {
+      font-size: 1.2rem;
+      color: #38bdf8;
       font-weight: 600;
-      transition: opacity 0.2s;
     }
-    .cta a:hover { opacity: 0.9; }
     footer {
       text-align: center;
       padding: 40px 0;
@@ -78,6 +95,11 @@
 </head>
 <body>
   <div class="container">
+    <!-- 公司名片 -->
+    <div class="banner">
+      <img src="images/moyanshe_banner.png" alt="墨颜社 · 专业修图">
+    </div>
+
     <header>
       <h1>专业在线修图工具</h1>
       <p>提供在线P图修图、无痕改字、PDF文件修改等一站式图片处理服务</p>
@@ -101,10 +123,11 @@
       </div>
     </div>
 
-    <div class="cta">
-      <p style="color:#94a3b8;margin-bottom:12px;">📧 业务联系 / 提交需求：</p>
-      <p style="font-size:1.2rem;color:#38bdf8;font-weight:600;">yishengguiyan@outlook.com</p>
-      <p style="color:#64748b;font-size:0.85rem;margin-top:8px;">直接复制邮箱地址发送需求即可</p>
+    <!-- 联系方式 -->
+    <div class="contact">
+      <h2>📬 联系我们</h2>
+      <img class="qr" src="images/qywx_qr.png" alt="企业微信二维码">
+      <p class="email">📧 邮箱：<span class="email-addr">yishengguiyan@outlook.com</span></p>
     </div>
 
     <footer>
